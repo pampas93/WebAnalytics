@@ -1,0 +1,61 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/stock/highstock.js"></script>
+        
+</head>
+    <body>
+        <div id="container" style="height: 500px; min-width: 500px"></div>
+
+        <script>
+            $(function() {
+                $.getJSON('http://localhost/chart3.php', function(data) { 
+                    // Create the chart
+                    
+                    $('#container').highcharts({
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'Top 10 Landing pages'
+                        },
+                        xAxis: {
+                            categories: data
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Hits'
+                                }
+
+                        },
+                        legend: {
+                            enabled: false
+                        },
+                        plotOptions: {
+                            series: {
+                                borderWidth: 0,
+                                dataLabels: {
+                                    enabled: true,
+                                }
+                            }
+                        },
+
+                        tooltip: {
+                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                            pointFormat: '<span style="color:{point.color}">{point.name}</span>'
+                        },
+
+                        series: [{
+                            name: 'Pages',
+                            colorByPoint: true,
+                            data: data 
+                        }],
+
+            
+                });
+
+            });
+});
+        </script>
+    </body>
+</html>

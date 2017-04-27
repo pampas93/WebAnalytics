@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawMap);
+
+      function drawMap() {
+
+        //$.getJSON('http://localhost/chartMap.php', function drawMap(data) {
+        var graph = google.visualization.arrayToDataTable([["Country","Hits"],["United States",9],["United Kingdom",2],["Sweden",1],["France",1],["Ukraine",1]]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(graph, options);
+      //});
+    }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <div id="container" style="height: 500px; min-width: 500px"></div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/stock/highstock.js"></script>
+        <script>
+            $(function() {
+                $.getJSON('http://localhost/chart1.php', function(data) { 
+                    // Create the chart
+                    $('#container').highcharts({
+                        chart: {
+                            type: 'pie'
+                        },
+                        
+                        title: {
+                            text: 'Traffic Country-wise'
+                        },
+                        
+                        /*tooltip: {
+                        pointFormat: '{series.name}: <b>{point.valueDecimals}%</b>'
+                        },*/
+                        
+                        plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                        //format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                    }
+                                }
+                            }
+                        },
+
+
+                        series : [{
+                            name : 'Hits',
+                            data : data,
+                            
+                        }]
+                    });
+                });
+
+            });
+        </script>
+    </body>
+</html>

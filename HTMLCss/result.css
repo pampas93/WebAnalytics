@@ -1,0 +1,239 @@
+.nav a{
+    color:#5a5a5a;
+    font-size:15px;
+    font-weight:bold;
+    padding-top:14px;
+    padding-bottom:14px;
+    padding-left:10px;
+    padding-right:10px;
+    text-transform:uppercase;
+}
+
+.nav {
+	position: relative;
+	top: 0px;
+	left: -60px;
+}
+
+.nav img{
+	height: 250px;
+}
+
+.nav h1{
+	position: relative;
+	left: 250px;
+	top: 20px;
+	font-size:48px;
+    font-weight:bold;
+    font-family:"Calibri", Times, serif;
+}
+
+#menu-nav{
+	margin-top: 25px;
+}
+
+.mainhead{
+	position: relative;
+	width: 100%;
+	top: -80px;
+    right: -95px;
+    height:660px;
+    background:url('../Images/WebAnalytics1.jpg');
+    background-size: 100%;
+}
+
+.mainhead h1{
+	color:#fff;
+    font-size:48px;
+    font-weight:bold;
+    font-family:'Shift',sans-serif;
+}
+
+.mainhead p, a{
+    color:#fff;
+    font-size:24px;
+}
+
+.mainhead a:hover{
+	color:#99CCFF;
+}
+
+.mainhead .container{
+	position: relative;
+	top: 50px;
+}
+
+.mainhead .container2{
+	position: relative;
+	top: 170px;
+}
+
+.mainhead .container2 a{
+	font-size: 30px;
+}
+
+.features
+{
+	height: 540px;
+	width: 100%;
+	position: relative;
+	top: -20px; 
+	border-top:1px solid #bababa;
+	border-bottom:1px solid #bababa;
+}
+
+.features .container h2{
+	font-size:30px;
+    font-weight:bold;
+    font-family:'Shift',sans-serif; 
+}
+
+td{
+	padding-top: 20px;
+}
+
+.footer{
+	background-color: #dedede;
+	border-top: 1px solid #858585;
+	border-bottom: 1px solid #858585;
+	position: relative;
+	height: 200px;
+	top: 100px;
+}
+
+.footer .container{
+	position: relative;
+	top: 25px;
+}
+
+.footer p{
+	color:#2f2f2f;
+	font-weight: bold;
+}
+
+.footer ul{
+	list-style-type: none;
+}
+
+.footer ul li a{
+	color: #2f2f2f;
+	line-height: 170%;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.btn-xlarge {
+	position: relative;
+	background-color: #08c;
+  	border-color: #08c;
+  	top: 45px;
+  	left: -30px;
+    padding: 25px 60px;
+    font-size: 22px;
+    width: 280px;
+    height: 85px;
+    border-top: 20px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+.btn-xlarge:hover,
+.btn-xlarge:focus,
+.btn-xlarge:active,
+.btn-xlarge.active {
+  background-color: #0077b3;
+  border-color: #006699;
+}
+.btn-xlarge.disabled:hover,
+.btn-xlarge.disabled:focus,
+.btn-xlarge.disabled:active,
+.btn-xlarge.disabled.active,
+.btn-xlarge[disabled]:hover,
+.btn-xlarge[disabled]:focus,
+.btn-xlarge[disabled]:active,
+.btn-xlarge[disabled].active,
+fieldset[disabled] .btn-xlarge:hover,
+fieldset[disabled] .btn-xlarge:focus,
+fieldset[disabled] .btn-xlarge:active,
+fieldset[disabled] .btn-xlarge.active {
+  background-color: #08c;
+  border-color: #08c;
+}
+
+.btn-xlarge p{
+	color: white;
+}
+
+.regblock{
+    position: relative;
+    top: 20px;
+    background-color: #e7e5d9;
+    border: 1px solid #bdbdc9;
+    border-radius: 15px;
+    height: 650px;
+}
+
+.regblock h1{
+    color:#383838;
+    font-size:40px;
+    font-weight:bold;
+    font-family:"Calibri", Times, serif;
+}
+
+.regblock a,h2{
+  color:#383838;
+  font-size: 30px;
+}
+
+
+
+.regblock h3{
+    color:#383838;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Calibri", Times, serif;
+}
+
+.btn-xlargen {
+	position: relative;
+	background-color: #08c;
+  	border-color: #08c;
+  	top: 45px;
+  	left: -30px;
+    padding: 25px 60px;
+    font-size: 22px;
+    width: 400px;
+    height: 85px;
+    border-top: 20px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+.btn-xlargen:hover,
+.btn-xlargen:focus,
+.btn-xlargen:active,
+.btn-xlargen.active {
+  background-color: #0077b3;
+  border-color: #006699;
+}
+.btn-xlargen.disabled:hover,
+.btn-xlargen.disabled:focus,
+.btn-xlargen.disabled:active,
+.btn-xlargen.disabled.active,
+.btn-xlargen[disabled]:hover,
+.btn-xlargen[disabled]:focus,
+.btn-xlargen[disabled]:active,
+.btn-xlargen[disabled].active,
+fieldset[disabled] .btn-xlargen:hover,
+fieldset[disabled] .btn-xlargen:focus,
+fieldset[disabled] .btn-xlargen:active,
+fieldset[disabled] .btn-xlargen.active {
+  background-color: #08c;
+  border-color: #08c;
+}
+
+.btn-xlargen p{
+	color: white;
+}
