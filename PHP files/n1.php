@@ -87,7 +87,7 @@ echo "Number of records: ".mysql_num_rows($result);
 //$con->close();
 include '/location.php';
 
-header( "refresh:0.5;url=/homepage.html" );
+header( "refresh:0.5;url=../HTMLCss/homepage.html" );
 
 
 ?>
